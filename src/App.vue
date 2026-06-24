@@ -63,7 +63,7 @@ function startTracking() {
 async function stopTracking() {
   endMarker.value = currentPosition.value
   isTracking.value = false
-  navigator.geolocation.clearWatch(watchId) // Stop tracking current loc
+  navigator.geolocation.clearWatch(watchId) // Stop tracking current location
 
   // -- Saving snapshot of map to gallery --
   const mapElement = document.getElementById('map')
